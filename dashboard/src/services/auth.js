@@ -12,13 +12,13 @@ export default httpClient => ({
       errors = {
         status: response.request.status,
         statusText: response.request.statusText
-      }
+      };
     }
 
     return {
       data: response.data,
       errors
-    }
+    };
   },
   login: async ({ email, password }) => {
     const response = await httpClient.post('/auth/login', {
@@ -32,12 +32,12 @@ export default httpClient => ({
       errors = {
         status: response.request.status,
         statusText: response.request.statusText
-      }
+      };
     }
 
     return {
       data: response.data,
       errors
-    }
+    };
   }
 });
