@@ -48,9 +48,9 @@
 <script>
 export default {
   setup(_, { emit }) {
-    return { emit }
+    return { emit };
   }
-}
+};
 </script>
 
 <style lang="postcss" scoped>

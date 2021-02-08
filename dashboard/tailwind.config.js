@@ -1,5 +1,5 @@
-const colors = require('tailwindcss/colors')
-const palette = require('./palette')
+const colors = require('tailwindcss/colors');
+const palette = require('./palette');
 
 module.exports = {
   purge: [],
@@ -860,4 +860,4 @@ module.exports = {
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
   plugins: [],
-}
+};

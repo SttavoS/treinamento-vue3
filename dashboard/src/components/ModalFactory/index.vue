@@ -68,7 +68,7 @@ export default {
     return {
       state,
       handleModalToogle
-    }
+    };
   }
-}
+};
 </script>

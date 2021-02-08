@@ -57,7 +57,7 @@ export default {
       router,
       logoutLabel,
       handleLogout
-    }
+    };
   }
-}
+};
 </script>

@@ -47,7 +47,7 @@ export default {
     return {
       handleLogin,
       handleAccountCreate
-    }
+    };
   },
-}
+};
 </script>

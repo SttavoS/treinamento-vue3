@@ -17,5 +17,5 @@ export default {
     size: { type: [String, Number], default: 22 },
     color: { type: String, default: 'white' }
   }
-}
+};
 </script>
