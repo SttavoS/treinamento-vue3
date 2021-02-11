@@ -30,7 +30,7 @@ jobs:
         npm install serve
         $(npm bin)/serve dist -s -p 8080 &
     
-    -name: Run tests
+    - name: Run tests
       uses: cypress-io/github-action@v2
       with: 
         working-directory: dashboard
