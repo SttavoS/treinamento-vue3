@@ -18,7 +18,7 @@ function init(apiKey) {
       iframe.style.overflow = 'hidden';
       iframe.style.border = '0px';
       iframe.style.zIndex = '9999';
-      document.appendChild(iframe);
+      document.body.appendChild(iframe);
 
       window.addEventListener('message', (event) => {
         if(!event.data.isWidget) return;
