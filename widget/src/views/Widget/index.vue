@@ -35,7 +35,7 @@ export default defineComponent({
     });
 
     watch(() => store.currentComponent, () => {
-      iframe.updateCoreValueOnStore();
+      iframe.updateCoreValuesOnStore();
     });
 
     function handleOpenBox(): void {

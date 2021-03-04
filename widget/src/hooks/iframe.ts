@@ -1,16 +1,16 @@
 import { setApiKey, setCurrentPage, setFingerprint } from '@/store';
 
 interface IframeControl {
-  updateCoreValueOnStore(): void;
+  updateCoreValuesOnStore(): void;
   notifyOpen(): void;
   notifyClose(): void;
 }
 
 export default function useIframeControl(): IframeControl {
-  function updateCoreValueOnStore(): void {
+  function updateCoreValuesOnStore(): void {
     if (process.env.NODE_ENV === 'production') {
       const query = new URLSearchParams(window.location.search);
-      const apiKey = query.get('get_key') ?? '';
+      const apiKey = query.get('api_key') ?? '';
       const page = query.get('page') ?? '';
       const fingerprint = query.get('fingerprint') ?? '';
 
@@ -40,7 +40,7 @@ export default function useIframeControl(): IframeControl {
   }
 
   return {
-    updateCoreValueOnStore,
+    updateCoreValuesOnStore,
     notifyOpen,
     notifyClose
   }
