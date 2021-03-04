@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" id="wizard-success-box">
     <Icon
       name="check"
       :color="palette.success"

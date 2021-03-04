@@ -2,6 +2,7 @@
   <div class="flex justify-between w-full my-5">
     <button
       @click="() => handleSelect('ISSUE')"
+      id="wizard-issue-feedback-type"
       class="feedback-type-button"
     >
       <div class="w-12">
@@ -14,6 +15,7 @@
 
     <button
       @click="() => handleSelect('IDEA')"
+      id="wizard-idea-feedback-type"
       class="feedback-type-button"
     >
       <div class="w-12">
@@ -26,6 +28,7 @@
 
     <button
       @click="() => handleSelect('OTHER')"
+      id="wizard-other-feedback-type"
       class="feedback-type-button"
     >
       <div class="w-12">

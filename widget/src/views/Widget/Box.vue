@@ -1,5 +1,5 @@
 <template>
-  <div class="box animate__animated animate__fadeInUp animate__faster">
+  <div id="widget-box" class="box animate__animated animate__fadeInUp animate__faster">
     <div
       :class="{
         'justify-between': canShowAdditionalControlAndInfo,
@@ -12,6 +12,7 @@
         @click="back"
         :disabled="canGoBack"
         :class="{ invisible: canGoBack }"
+        id="widget-goback-button"
         class="text-xl text-gray-800 focus:outline-none"
       >
         <icon size="14" name="arrow-right" :color="colors.gray['800']" />
@@ -26,16 +27,18 @@
 
       <button
         @click="() => emit('close-box')"
+        id="widget-close-button"
         class="text-xl text-gray-800 focus:outline-none"
       >
         <icon size="14" name="close" :color="colors.gray['800']" />
       </button>
     </div>
 
-    <wizard />
+    <Wizard />
 
     <div
       v-if="canShowAdditionalControlAndInfo"
+      id="widget-copyright"
       class="text-gray-800 text-sm flex"
     >
       <icon name="chat" class="mr-1" :color="brandColors.graydark"/>

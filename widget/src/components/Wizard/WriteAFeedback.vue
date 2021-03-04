@@ -2,6 +2,7 @@
   <div class="wizard-wrapper">
     <textarea
       v-model="state.feedback"
+      id="wizard-textarea-field"
       class="wizard-input-field"
     >
     </textarea>
@@ -13,6 +14,7 @@
         'bg-brand-main text-white': !submitButtonIsDisabled
       }"
       @click="submitAFeedback"
+      id="wizard-submit-button"
       class="wizard-button"
     >
       <Icon v-if="state.isLoading" name="loading" class="animate-spin" color="white" />

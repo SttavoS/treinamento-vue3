@@ -1,6 +1,7 @@
 <template>
   <div
     @click="() => emit('open-box')"
+    id="widget-open-button"
     class="widget-wrapper animate__animated animate__fadeInUp animate__faster"
   >
     <Icon
