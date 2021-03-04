@@ -6,7 +6,7 @@ function init(apiKey) {
 
     const WIDGET_URL = `https://sttavos-feedbacker-widget.netlify.app?api_key=${apiKey}$page=${page}$fingerprint=${fingerprint.visitorID}`;
     const config = { method: 'HEAD'};
-    const response = await fetch(`https://backend-treinamento-vue3-zeta.vercel.app/apikey/exists?appkey=${apiKey}`, config);
+    const response = await fetch(`https://backend-treinamento-vue3-zeta.vercel.app/apikey/exists?apikey=${apiKey}`, config);
 
     if (response.status === 200) {
       const iframe = document.createElement('iframe');
